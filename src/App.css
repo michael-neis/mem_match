@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,149 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+
+
+/*-------------------------------Homepage list elements -------------------------------------------------*/
+.home-page{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.ref-ul {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.ref-ul li {
+  list-style: none;
+  width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ref-ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #250f49;
+  font-size: 17px;
+  font-weight: 600;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+/* .ref-ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #250f49;
+  border-bottom: 2px solid #250f49;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
+} */
+
+/* .ref-ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #250f49;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
+} */
+
+.ref-ul li a:hover {
+  background-color: #250f49;
+  color: rgb(255, 255, 255);
+}
+
+/* .ref-ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.ref-ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
+} */
+
+
+
+
+
+
+/* -----------------------------Card container --------------------------------------------------*/
+
+.card-container{
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 3%; */
+  height: 80vh;
+  width: 80vw;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+/* ------------------------------- Cards themselves --------------------------------------------- */
+.game-card{
+  color: rgb(0, 0, 0);
+  margin: 10px 1.5% 10px 1.5%;
+  padding: 15px 5px 5px 5px;
+  /* width: calc(10%); */
+  /* min-height: 300px; */
+  /* border-radius: 5px; */
+  border-color: black;
+  background-color: hsla(0, 1%, 63%, 0.212);
+  transition: background-color 500ms, border-color 500ms, box-shadow 500ms;
+  box-shadow: 5px 5px 4px #250f49;
+  position: relative;
+  cursor: pointer;
+}
+
+.game-card p{
+  margin-top: 10px
+}
+
+.game-card img{
+  /* width: 250px; */
+  width: 90%;
+}
+
+.game-card:hover{
+  background-color: hsl(210, 6%, 93%);
+  border-color: hsl(180, 50%, 20%);
+  box-shadow: 5px 5px 4px hsla(261, 66%, 57%, 0.575);
+  color:rgb(0, 0, 0)
 }
