@@ -1,6 +1,17 @@
 ## Available Scripts
 
+>> update this read me with the coorect needed to run this application locally from source code and from Docker container
+
+To get all the libraries and depenicies needed to run this app locally, run:
+
+> `npm install`
+
 In the project directory, you can run:
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm start`
 
@@ -9,11 +20,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
